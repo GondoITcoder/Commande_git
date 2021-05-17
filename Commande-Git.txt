@@ -77,3 +77,6 @@ git config --global alias.{le racourcis} la commande-git-dont-le-racourcis est c
 
 #Supprimer des alias
 git config --global --unset alias.{Le racourcis à supprimmer}
+
+#Voir l'ensemble des dépôts distant
+git remote -v
