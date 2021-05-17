@@ -4,3 +4,58 @@ git config --glogal user.name "Votre nom"
 
 #Pour avoir le nom ou le mail de clui qui est connecter
 git config --glogal user.name ou user.email
+
+#Initialiser un projet pour le rendre en un dépôt git
+git init
+
+#Ajouter tout tes fchiers pour les tracker
+git add -A
+
+#Ajouter uns fchiers pour le tracker
+git add nom-du-fichier
+
+#Voir qu'est ce qui a été rajouter dans le chier
+git diff nom-du-fichier
+
+#Voir le status git afin de voir l'état actuel de vos fichier(modifier ou non)
+git status
+
+#Pour faire un commit
+git commit -m "le message du commit"
+
+#Voir la liste des commit
+git log
+
+#Annuler un commit
+Soit faire un nouveau commit pour supprimer l'ancien commit si vous avvez déja faire
+un git push pour envoyer vers le cloud ou dans le cas contraire faire:
+
+->Revient à l'étape précédent(commit) en annulant les modifications que j'ai faites
+git reset --hard id-du-commit
+
+->Revient à l'étape précédent(commit) en gardant les modifications que j'ai faites  
+git reset --soft
+
+#Rajouter les modifications au commit précédent sans créer un new commit
+git commit --amend --no-edit (sans --no-edit, je suis obligé de modofier le sms du commit)
+
+#Faire revenir des fichier que j'ai supprimmer par erreur
+git checkout -f
+
+#Créer un branche
+git checkout -b nom-de-la-branche
+
+#Changer(switcher) de branche
+git checkout nom-de-la-branche
+
+#Supprimer une branche
+git branch -d nom-de-la-branche
+
+#Supprimer une branche même si elle n'a pas été fusionner
+git branch -D
+
+#Voir toutes les branches
+git branch
+
+#Fusionner les modification faites dans les autres branches
+git merge nom-de-l-autre-branche(ou les modification ont été faites)
