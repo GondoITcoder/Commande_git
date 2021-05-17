@@ -57,5 +57,14 @@ git branch -D
 #Voir toutes les branches
 git branch
 
+#Voir toutes les branches et le dernier commit qui a été fais sur chacun
+git branch -v
+
 #Fusionner les modification faites dans les autres branches
 git merge nom-de-l-autre-branche(ou les modification ont été faites)
+
+#Créer des allias(racourcis de commande)
+git config --global alias.{le racourcis} la commande-git-dont-le-racourcis est créer)
+
+#Supprimer des alias
+git config --global --unset alias.{Le racourcis à supprimmer}
