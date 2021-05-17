@@ -1,0 +1,6 @@
+#Configuration de base
+git config --global user.email "votre email"
+git config --glogal user.name "Votre nom"
+
+#Pour avoir le nom ou le mail de clui qui est connecter
+git config --glogal user.name ou user.email
