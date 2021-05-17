@@ -26,6 +26,15 @@ git commit -m "le message du commit"
 #Voir la liste des commit
 git log
 
+#Voir la liste des commit sous forme de graphe
+git log --graph
+
+#Afficher une ligne descriptive par commit
+git log --oneline
+
+#Afficher une ligne descriptive par commit sous forme de graphe
+git log --oneline --graph
+
 #Annuler un commit
 Soit faire un nouveau commit pour supprimer l'ancien commit si vous avvez déja faire
 un git push pour envoyer vers le cloud ou dans le cas contraire faire:
